@@ -12,6 +12,10 @@
 
   - 第 3 章：项目搭建
 
+  - 第 4 章：项目解决
+
+    - [第 1 节：ElMessageBox](/docs/项目解决/1.ElMessageBox弹框不展示.md)
+
   - 第 4 章：第三方插件
 
     - [第 1 节：mammoth](https://gitee.com/heihei_cn/mammoth-learn.git)
