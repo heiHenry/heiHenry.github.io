@@ -41,61 +41,61 @@
             "/": "搜索",
           },
         },
-        count: {
-          // 【插件】字数统计
-          countable: true,
-          position: "top",
-          margin: "10px",
-          float: "left",
-          fontsize: "0.9em",
-          color: "rgb(90,90,90)",
-          language: "chinese",
-          localization: {
-            words: "",
-            minute: "",
-          },
-          isExpected: true,
-        },
-        plugins: [
-          function (hook) {
-            var footer = [
-              "<hr/>",
-              "<footer>",
-              '<span><a href="https://family.manyacan.com">HX</a> &copy;2024.</span>',
-              '<span>Published by <a href="https://www.manyacan.com" target="_blank">HX</a>.</span>',
-              "</footer>",
-            ].join("");
+        // count: {
+        //   // 【插件】字数统计
+        //   countable: true,
+        //   position: "top",
+        //   margin: "10px",
+        //   float: "left",
+        //   fontsize: "0.9em",
+        //   color: "rgb(90,90,90)",
+        //   language: "chinese",
+        //   localization: {
+        //     words: "",
+        //     minute: "",
+        //   },
+        //   isExpected: true,
+        // },
+        // plugins: [
+        //   function (hook) {
+        //     var footer = [
+        //       "<hr/>",
+        //       "<footer>",
+        //       '<span><a href="https://family.manyacan.com">HX</a> &copy;2024.</span>',
+        //       '<span>Published by <a href="https://www.manyacan.com" target="_blank">HX</a>.</span>',
+        //       "</footer>",
+        //     ].join("");
 
-            hook.afterEach(function (html) {
-              return html + footer;
-            });
-          },
-        ],
-        darkMode: {
-          // 【插件】夜间模式
-          dark: {
-            background: "#1c2022",
-            toggleBtnBg: "#34495e",
-            textColor: "#b4b4b4",
-          },
-          light: {
-            background: "white",
-            toggleBtnBg: "var(--theme-color)",
-            textColor: "var(--theme-color)",
-          },
-        },
-        timeUpdater: {
-          // 【插件】最后更新时间
-          text: ">最后更新时间: {docsify-updated}",
-          formatUpdated: "{YYYY}/{MM}/{DD}",
-          whereToPlace: "bottom", // "top" or "bottom", default to "bottom"
-        },
+        //     hook.afterEach(function (html) {
+        //       return html + footer;
+        //     });
+        //   },
+        // ],
+        // darkMode: {
+        //   // 【插件】夜间模式
+        //   dark: {
+        //     background: "#1c2022",
+        //     toggleBtnBg: "#34495e",
+        //     textColor: "#b4b4b4",
+        //   },
+        //   light: {
+        //     background: "white",
+        //     toggleBtnBg: "var(--theme-color)",
+        //     textColor: "var(--theme-color)",
+        //   },
+        // },
+        // timeUpdater: {
+        //   // 【插件】最后更新时间
+        //   text: ">最后更新时间: {docsify-updated}",
+        //   formatUpdated: "{YYYY}/{MM}/{DD}",
+        //   whereToPlace: "bottom", // "top" or "bottom", default to "bottom"
+        // },
       };
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script> -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script> -->
   </body>
 </html>
